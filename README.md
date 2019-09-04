@@ -1,6 +1,6 @@
 # Tasks App
 
-This is a simple tasks applications.
+This is a simple tasks project.
 This django  project requires Python 3.6, Django version 2.2.5 and SQLite3 database.
 
 
@@ -35,13 +35,13 @@ Just run::
 Project structure
 ====================
 
-- task_app (contains all files of the project despite of templates)
+- task_app (contains all files and structure of the project)
 
-- task_app (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
+- task_app/task_app (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
 
-- tasks (app with main ``business logic``, ``unit tests`` and ``data migrations``)
+- task_app/tasks (app with main ``business logic``, ``unit tests`` and ``data migrations``)
 
-- templates (folder with .html files, ordered by applications)
+- task_app/templates (folder with .html files, ordered by applications)
 
 
 
