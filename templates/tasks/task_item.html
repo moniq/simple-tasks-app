@@ -1,0 +1,18 @@
+<tr>
+    <td>{{ task.id }}</td>
+    <td>{{ task.name }}</td>
+    <td>{{ task.status }}</td>
+    <td>{{ task.start_date }}</td>
+    <td>{{ task.end_date|default:"-" }}</td>
+    <td>{{ task.parent|default:"No" }}</td>
+    <td>{{ task.duration }}</td>
+    <td>{{ task.net_duration }}</td>
+</tr>
+
+{% if task.has_children %}
+     {% for sub_task in task.subtasks.all %}
+          {% with task=sub_task template_name="tasks\task_item.html" %}
+               {% include template_name %}
+          {% endwith %}
+     {% endfor %}
+{%endif%}

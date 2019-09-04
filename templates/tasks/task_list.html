@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Parent</th>
+                <th>Duration</th>
+                <th>Net duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in object_list %}
+                        {% include "tasks/task_item.html" %}
+             {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
