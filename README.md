@@ -34,10 +34,15 @@ Just run::
 
 Project structure
 ====================
--> task_app (contains all files of the project despite of templates)
---> task_app (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
---> tasks (app with main ``business logic``, ``unit tests`` and ``data migrations``)
---> templates (folder with .html files, ordered by applications)
+
+- task_app (contains all files of the project despite of templates)
+
+- task_app (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
+
+- tasks (app with main ``business logic``, ``unit tests`` and ``data migrations``)
+
+- templates (folder with .html files, ordered by applications)
+
 
 
 
