@@ -245,7 +245,7 @@ class Task(models.Model):
 
 @receiver(post_save, sender=Task)
 def update_parent_timetable(sender, instance, **kwargs):
-    """Update start_date and end_date values of parent nodes in all tree of tasks."""
+    """Update start_date and end_date values of parent nodes in the tree of tasks."""
     if instance.parent:
         instance.parent.start_date = instance.parent.subtasks.order_by('start_date').first().start_date
         instance.parent.end_date = instance.parent.subtasks.order_by('-end_date').first().end_date
