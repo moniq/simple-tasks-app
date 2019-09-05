@@ -162,6 +162,8 @@ class TaskModelTest(TestCase):
         self.assertEqual(task.end_date, parent_task.parent.parent.end_date)
 
     def test_end_date_no_propagation(self):
+        """Test if every level of the tree has proper end_date value, after adding new task to the tree."""
+
         parent_task = Task.objects.get(id=5)
         tmp_parent_end_datetime = parent_task.parent.end_date
 
