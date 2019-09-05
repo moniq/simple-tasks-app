@@ -35,7 +35,7 @@ class Task(models.Model):
     end_date = models.DateTimeField(
         null=True,
         blank=False,
-        help_text="Scheduled start time of the task.",
+        help_text="Scheduled end time of the task.",
     )
 
     parent = models.ForeignKey(
