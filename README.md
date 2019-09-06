@@ -19,7 +19,10 @@ Build instructions
 
         python manage.py runserver
 
+5) Visit http://localhost:8000/
 
+Main page presents full list of tasks ordered by parents and ids.
+![main page](https://github.com/moniq/simple-tasks-app/blob/master/static/img/main_page.png)
 
 
 
