@@ -3,6 +3,7 @@
 This is a simple tasks project.
 This django  project requires Python 3.6, Django version 2.2.5 and SQLite3 database.
 
+Third-party libraries that are necessary to run the project: django-rest-framework version 3.10.3.
 
 Build instructions
 ==================
@@ -44,5 +45,15 @@ Project structure
 - task_app/templates (folder with .html files, ordered by applications)
 
 
+REST API
+===========
 
+The project includes REST api functionality.
 
+Endpoints:
+        # list of all tasks
+        http://localhost:8000/api/
+
+        # task details
+        http://localhost:8000/api/task/<:id>/
+        example: http://localhost:8000/api/task/1/
