@@ -8,9 +8,10 @@ Third-party libraries that are necessary to run the project: django-rest-framewo
 Build instructions
 ==================
 
-1) Create virtualenv. It is a good practice to keep your projects in separated environments: virtualenv lib is recommended.
+1) Create virtualenv. (It is a good practice to keep your projects in separated environments: virtualenv library is recommended.)
 
 2) Install::
+
         pip install -r task_app\requirements.txt
 
 3) You don't need to create and migrate database. Database with all sample data is in db.sqlite3 file.
@@ -24,9 +25,6 @@ Build instructions
 Main page presents full list of tasks ordered by parents and ids.
 ![main page](https://github.com/moniq/simple-tasks-app/blob/master/static/img/main_page.png)
 
-
-
-
 TDD
 ====
 
@@ -34,6 +32,7 @@ TDD is a good practice to avoid functional complexity  and focus on what you nee
 Rus unit tests of the project:
 
 Just run::
+
         python manage.py test tasks --settings=task_app.settings_tests
 
 
