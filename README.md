@@ -16,7 +16,9 @@ Build instructions
 3) You don't need to create and migrate database. Database with all sample data is in db.sqlite3 file.
 
 4) Run::
+
         python manage.py runserver
+
 
 
 
