@@ -18,12 +18,13 @@ from django.urls import include, path
 
 
 api_urls = [
-    path('', include('tasks.urls')),
+    path('', include('tasks.api.urls')),
 ]
 
 urlpatterns = [
+    path('', include('tasks.urls')),
     path('admin/', admin.site.urls),
-    path('', include(api_urls)),
+    path('api/', include(api_urls)),
 ]
 
 

@@ -20,9 +20,45 @@ TASK_STATUS_MAPPER = {
     COMPLETE: "Complete",
 }
 
+PRIORITY_CHOICES = (
+    ('L', 'Low'),
+    ('N', 'Normal'),
+    ('U', 'Urgent'),
+)
+
+
+class Owner(models.Model):
+    name = models.CharField(
+        max_length=32,
+        null=False,
+        blank=False
+    )
+    surname = models.CharField(
+        max_length=64,
+        null=False,
+        blank=False
+    )
+
+    def __str__(self):
+        return "{} {}".format(
+            self.name,
+            self.surname
+        )
+
 
 class Task(models.Model):
-
+    owner = models.ForeignKey(
+        Owner,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+    )
+    priority = models.CharField(
+        choices=PRIORITY_CHOICES,
+        default='N',
+        null=True,
+        max_length=1,
+    )
     name = models.CharField(
         max_length=120,
         help_text="Name of the task in maximum 120 signs.",
