@@ -51,6 +51,7 @@ REST API
 The project includes REST api functionality.
 
 Endpoints:
+
         # list of all tasks
         http://localhost:8000/api/
 
