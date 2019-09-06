@@ -167,7 +167,6 @@ class TaskModelTest(TestCase):
         parent_task = Task.objects.get(id=5)
         tmp_parent_end_datetime = parent_task.parent.end_date
 
-
         task = Task.objects.create(
             name="task B2a.1",
             start_date=make_aware(datetime.strptime('07-03-2009', '%d-%m-%Y')),

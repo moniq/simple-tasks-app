@@ -209,16 +209,6 @@ class Task(models.Model):
         return self.__net_duration()
 
     def __net_duration(self):
-        return self.__total_time_of_scopes()
-
-    def __total_time_of_scopes(self):
-        total = timezone.timedelta(0)
-        all_scopes = self.get_merged_timetable()
-        for dt_scope in all_scopes:
-            total += dt_scope[1] - dt_scope[0]
-        return total
-
-    def __net_duration(self):
         """
         Main logic of calculating net_duration value.
 
@@ -240,7 +230,6 @@ class Task(models.Model):
 
         total = timezone.timedelta(0)
         for subtask in merged_subtasks:
-            print(subtask)
             total += subtask[1] - subtask[0]
         return total
 
