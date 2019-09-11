@@ -44,13 +44,13 @@ Just run::
 Project structure
 ====================
 
-- task_app (contains all files and structure of the project)
+- main directory - contains all files and structure of the project)
 
-- task_app/task_app (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
+- /task_app/ (contains configuration files of the project: settings.py, settings_test.py, urls.py and wsgi.py)
 
-- task_app/tasks (app with main ``business logic``, ``unit tests`` and ``data migrations``)
+- /tasks/ (app with main ``business logic``, ``unit tests`` and ``data migrations``)
 
-- task_app/templates (folder with .html files, ordered by applications)
+- /templates/ (folder with .html files, ordered by applications)
 
 
 REST API
