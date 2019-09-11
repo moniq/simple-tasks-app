@@ -18,6 +18,9 @@ Build instructions
 
 4) Run::
 
+        python manage.py runserver
+
+        # or with settings module:
         python manage.py runserver --settings=task_app.settings_staging
 
 
