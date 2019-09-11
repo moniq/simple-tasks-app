@@ -18,7 +18,8 @@ Build instructions
 
 4) Run::
 
-        python manage.py runserver
+        python manage.py runserver --settings=task_app.settings_staging
+
 
 5) Visit http://localhost:8000/
 
