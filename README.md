@@ -5,7 +5,7 @@ SKY django challenge
 Requirements
 =================
 
-This django  project requires Python 3.6, Django version 2.2.5 and SQLite3 database.
+This django  project requires Python 3.6, Django version 2.2.8 and SQLite3 database.
 
 Third-party libraries that are necessary to run the project: django-rest-framework version 3.10.3.
 
